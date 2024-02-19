@@ -1,11 +1,8 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import './globals.css'
-
-const inter = Inter({ subsets: ['latin'] })
+import '../globals.css'
 
 export const metadata: Metadata = {
-  title: 'Zarvazy Chatbot',
+  title: 'Zarvazy Chatbot - Autenticação',
   description: 'O melhor chatbot do Brasil.',
 }
 
@@ -16,7 +13,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt_br">
-      <body className={inter.className}>{children}</body>
+      <body style={{ backgroundColor: '#D9D9D9', fontSize: 14 }}>
+        {children}
+      </body>
     </html>
   )
 }
